@@ -1,0 +1,196 @@
+/* Paleta de cores
+242424 - eerie black
+F4F4F4 - White smoke
+663399 - Rebecca purple
+9370DB - Amethyst/Mediumpurple
+E07415 - Ochre
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-primaria: #00224D;
+    --cor-secundaria: #ffffff;
+    --cor-terciaria: #dd1940;
+    --cor-hover: #A0153E;
+    --cor-bg-hover: #272727;
+
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+
+
+.cabecalho {
+    padding: 2% 0 0 5%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.cor-cabecalho {
+    background-color: var(--cor-terciaria); /* Altere para a cor desejada */
+    color: var(--cor-primaria);
+  
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+.cabecalho__menu__link:hover {
+    color: var(--cor-secundaria);
+}
+
+
+.apresentacao {
+    padding: 8% 5%;
+    display: flex;
+    align-items: center;
+    gap: 82px;
+    justify-content: space-between;
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+
+.apresentacao__conteudo__lista {
+    list-style-type: none;
+    padding: 0; 
+     font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+     list-style-type: disc; 
+     padding-left: 20px; 
+     align-items: center;
+    
+}
+
+.apresentacao__conteudo__item img {
+        max-width: 40%; 
+        height: auto; 
+
+    }
+
+.apresentacao__conteudo__item:hover {
+            color: var(--cor-terciaria) 
+        }
+
+.apresentacao__conteudo__item {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2rem;
+    margin-bottom: 8px; 
+}
+
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    
+}
+.apresentacao__links__navegacao:hover {
+    background-color:var(--cor-secundaria);
+    color: var(--cor-hover);
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links__navegacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 50%;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    border: 2px solid var(--cor-hover);
+    color: var(--cor-secundaria);  
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;  
+    text-decoration: none;   
+}
+
+.apresentacao__links__link:hover {
+    background-color: var(--cor-bg-hover);
+    border-color: var(--cor-terciaria);
+}
+
+.apresentacao__imagem {
+    box-shadow: 0 0 0 8px var(--cor-hover);
+
+}
+
+.rodape {
+    color:var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+    
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
